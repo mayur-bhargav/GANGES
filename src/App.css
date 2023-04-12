@@ -1,0 +1,34 @@
+.bttn{
+    position: relative;
+    /* background: #fbfaff; */
+    color: #292734;
+    width: 18rem;
+    margin-left: 1.2rem;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    border: 10px;
+    outline: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+   
+;
+
+}
+.bttn::after{
+content: '';
+position: absolute;
+width: 100%;
+height: 0.175rem;
+left: 0px;
+bottom: 15px;
+text-decoration: none;
+background: #ea0e4b;
+transform: scale(0 , 1);
+transform-origin: 0% 100%;
+transition: transform 0.3s ease;
+}
+.bttn:hover::after{
+    transform: scale(1,1);
+    text-decoration: none;
+}
